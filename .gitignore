@@ -21,13 +21,15 @@
 target
 
 # sbt run folder
-/test_run_dir/
+# /test_run_dir/
 
 # Eclipse files
 .cache-main
 .cache-tests
 .classpath
 .project
+.bloop
+project
 .settings/
 
 # ignore files created when viewing doc/tutorial/*.tex

@@ -8,6 +8,7 @@ class Adder(val n:Int) extends Module {
   val io = IO(new Bundle {
     val A    = Input(UInt(n.W))
     val B    = Input(UInt(n.W))
+    // 进位
     val Cin  = Input(UInt(1.W))
     val Sum  = Output(UInt(n.W))
     val Cout = Output(UInt(1.W))
@@ -28,6 +29,7 @@ class Adder(val n:Int) extends Module {
     FAs(i).a := io.A(i)
     FAs(i).b := io.B(i)
     FAs(i).cin := carry(i)
+    // 将上一次加起来的结果和下一次的进位连在一起
     carry(i+1) := FAs(i).cout
     sum(i) := FAs(i).sum.asBool
   }

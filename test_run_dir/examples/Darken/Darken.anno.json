@@ -1,0 +1,27 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Darken|Darken>io_out",
+    "sources":[
+      "~Darken|Darken>io_in"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.phases.DriverCompatibility$TopNameAnnotation",
+    "topName":"Darken"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/examples/Darken"
+  }
+]

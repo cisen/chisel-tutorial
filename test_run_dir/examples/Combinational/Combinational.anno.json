@@ -1,0 +1,28 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Combinational|Combinational>io_z",
+    "sources":[
+      "~Combinational|Combinational>io_x",
+      "~Combinational|Combinational>io_y"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.phases.DriverCompatibility$TopNameAnnotation",
+    "topName":"Combinational"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/examples/Combinational"
+  }
+]

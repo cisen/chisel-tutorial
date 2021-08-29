@@ -1,0 +1,36 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~HiLoMultiplier|HiLoMultiplier>io_Lo",
+    "sources":[
+      "~HiLoMultiplier|HiLoMultiplier>io_A",
+      "~HiLoMultiplier|HiLoMultiplier>io_B"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~HiLoMultiplier|HiLoMultiplier>io_Hi",
+    "sources":[
+      "~HiLoMultiplier|HiLoMultiplier>io_A",
+      "~HiLoMultiplier|HiLoMultiplier>io_B"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.phases.DriverCompatibility$TopNameAnnotation",
+    "topName":"HiLoMultiplier"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/examples/HiLoMultiplier"
+  }
+]

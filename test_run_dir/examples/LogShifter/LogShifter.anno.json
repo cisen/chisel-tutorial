@@ -1,0 +1,27 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~LogShifter|LogShifter>io_out",
+    "sources":[
+      "~LogShifter|LogShifter>io_shamt"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.phases.DriverCompatibility$TopNameAnnotation",
+    "topName":"LogShifter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/examples/LogShifter"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Tbl|Tbl>io_out",
+    "sources":[
+      "~Tbl|Tbl>io_addr"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.phases.DriverCompatibility$TopNameAnnotation",
+    "topName":"Tbl"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/examples/Tbl"
+  }
+]

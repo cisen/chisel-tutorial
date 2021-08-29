@@ -1,0 +1,38 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FullAdder|FullAdder>io_cout",
+    "sources":[
+      "~FullAdder|FullAdder>io_a",
+      "~FullAdder|FullAdder>io_cin",
+      "~FullAdder|FullAdder>io_b"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FullAdder|FullAdder>io_sum",
+    "sources":[
+      "~FullAdder|FullAdder>io_cin",
+      "~FullAdder|FullAdder>io_a",
+      "~FullAdder|FullAdder>io_b"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.phases.DriverCompatibility$TopNameAnnotation",
+    "topName":"FullAdder"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/examples/FullAdder"
+  }
+]

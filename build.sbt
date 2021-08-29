@@ -40,6 +40,7 @@ scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-language:refle
 // The following are the current "release" versions.
 val defaultVersions = Seq(
   "chisel-iotesters" -> "1.4.1+",
+  // "scala-debug-adapter" -> "1.1.2+",
   "chiseltest" -> "0.3.3"
   )
 

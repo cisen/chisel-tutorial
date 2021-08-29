@@ -17,6 +17,7 @@
 *.im24
 *.swp
 *.out
+.metals
 /bin/
 target
 

@@ -2,7 +2,7 @@
 package examples
 
 import chisel3._
-
+// 读取32位总的各个字节
 class ByteSelector extends Module {
   val io = IO(new Bundle {
     val in     = Input(UInt(32.W))

@@ -9,6 +9,7 @@ import chisel3._
  * high.
  * The GCD will be returned in 'out' when 'valid' is high.
  */
+// 求最大最大公约数
 class GCD extends Module {
   val io = IO(new Bundle {
     val a     = Input(UInt(16.W))
